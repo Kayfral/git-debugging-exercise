@@ -51,3 +51,7 @@ git checkout feature/login
 git reflog show feature/login --date=iso | head -n 30
 git cherry-pick <hash>
 ```
+**Regarding the difficulties**  
+In Task 2, I had to split one commit into three. I successfully did it in the main branch, but at that moment I didn’t notice that the same issue existed in feature/login. Because of that, during the next steps, the “quick fix” commit was moved from feature/login to main.
+
+I noticed this problem only when I was pushing to GitHub. I had to spend some time cleaning up the branches to remove the “quick fix” commit that had already been deleted earlier.
